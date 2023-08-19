@@ -1,0 +1,1 @@
+SELECT client_id as 'id клиента', full_name as 'Полное имя клиента', adress as 'Адрес', telephone as 'Номер телефона', added_date as 'Дата регистрации' FROM clients WHERE YEAR(added_date) BETWEEN $year1 AND $year2 AND MONTH(added_date) BETWEEN $month1 AND $month2;

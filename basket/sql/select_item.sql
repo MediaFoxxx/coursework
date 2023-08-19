@@ -1,0 +1,1 @@
+select * from bouquets where bouquet_id=$prod_id

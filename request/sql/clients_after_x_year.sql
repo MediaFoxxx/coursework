@@ -1,0 +1,1 @@
+select client_id as 'id клиента', full_name as 'Полное имя клиента', adress as 'Адрес', telephone as 'Номер телефона', added_date as 'Дата регистрации' from clients where year(added_date) > $year

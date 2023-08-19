@@ -1,0 +1,1 @@
+select b_name as 'Название букетов', bt_count as 'Количество букетов', sum_cost as 'Выручка' from bouquets_report join bouquets using (bouquet_id) where r_year=$i_year and r_month=$i_month

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_details.title }}</title>
+        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='db_result.css') }}">
+</head>
+<body>
+    <table>
+        <h2 align="center">{{ page_details.caption }}</h2>
+        <tr>
+            {% for column in schema %}
+            <td class="table-title">{{ column }}</td>
+            {% endfor %}
+        </tr>
+        {% for line in result %}
+        <tr>
+            {% for column in line %}
+            <td>{{ column }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <div align="center">
+        <br><br>
+        <a href="{{url_for('bp_request.start_request')}}"> Вернуться к вариантам запросов </a><br><br>
+        <a href="{{url_for('main_menu')}}"> Вернуться на главную страницу </a>
+    </div>
+</body>
+</html>

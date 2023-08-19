@@ -1,0 +1,1 @@
+select * from bouquets_report where r_year=$i_year and r_month=$i_month

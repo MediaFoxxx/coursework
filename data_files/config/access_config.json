@@ -1,0 +1,22 @@
+{
+  "director": [
+    "bp_report.start_report",
+    "bp_report.view_rep"
+  ],
+  "admin": [
+    "bp_report.start_report",
+    "bp_report.create_rep",
+    "bp_request.start_request",
+    "bp_request.clients_after_x_year",
+    "bp_request.sum_cost_in_x_year"
+  ],
+  "admin_low": [
+    "bp_request.start_request",
+    "bp_request.bouquets",
+    "bp_request.clients_with_prefix_x",
+    "bp_request.clients_in_base_from_to"
+  ],
+  "external": [
+    "bp_order"
+  ]
+}

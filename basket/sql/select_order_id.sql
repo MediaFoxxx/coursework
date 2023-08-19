@@ -1,0 +1,1 @@
+select max(order_id) as max_id from clients_orders where client_id=$user_id

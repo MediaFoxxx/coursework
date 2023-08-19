@@ -1,0 +1,1 @@
+insert clients_orders values(NULL, NULL, NULL, $user_id, 5)

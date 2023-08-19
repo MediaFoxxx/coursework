@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Параметры</title>
+<!--    <link type="text/css" rel="stylesheet" href="static/sem2.css">-->
+</head>
+<body>
+<center>
+    <h2>{{ report_info.html.text }}</h2>
+    <form action="" method="POST">
+
+        {% for item in report_info.report.items() %}
+        <input name={{item[0]}} type="text" placeholder="{{ item[1]['description'] }}"><br><br>
+        {% endfor %}
+        <input type="submit" value="Отправить"><br><br>
+        <a href="{{url_for('bp_report.start_report')}}"> Вернуться к вариантам отчетов </a><br><br>
+        <a href="{{url_for('main_menu')}}"> Вернуться на главную страницу </a>
+
+    </form>
+    {% if message != '' %}
+    <h3>{{ message }}</h3>
+    {% endif %}
+</center>
+</body>
+</html>

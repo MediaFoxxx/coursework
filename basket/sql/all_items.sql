@@ -1,0 +1,1 @@
+select bouquet_id, b_name, b_cost from bouquets

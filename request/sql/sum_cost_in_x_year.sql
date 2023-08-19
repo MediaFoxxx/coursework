@@ -1,0 +1,1 @@
+SELECT SUM(o_cost) as 'Сумма всех заказов в $year году' FROM clients_orders WHERE YEAR(o_date) = $year

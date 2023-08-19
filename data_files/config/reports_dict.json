@@ -1,0 +1,23 @@
+{
+  "bouquets_report": {
+    "rep_name": "Отчет о месячной выручке",
+    "create_rep": "bp_report.create_rep",
+    "view_rep": "bp_report.view_rep",
+    "html": {
+      "text": "Введите параметры для отчета",
+      "title": "Отчет по букетам",
+      "caption": "Отчет по букетам за $year.$month"
+    },
+    "sql": {},
+    "report": {
+      "year": {
+        "description": "Выберите год",
+        "param": 2015
+      },
+      "month": {
+        "description": "Выберите месяц",
+        "param": 5
+      }
+    }
+  }
+}
